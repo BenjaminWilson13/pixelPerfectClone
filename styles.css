@@ -1,0 +1,333 @@
+html{
+    background-color: darkgray;
+    font-family: Calibri, 'Helvetica', Arial, sans-serif;
+}
+
+body {
+    width: 1232px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav_bar{
+    margin-top: 25px;
+    display: grid; 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: 18px;
+    
+}
+
+.page-logo {
+    justify-self: flex-start; 
+    align-self: flex-start;
+    width: 154px;
+}
+
+.sign-up-button {
+    margin: 0; 
+    width: fit-content;
+    padding: 0 24px;
+    display: flex;
+    height: 40px;
+    background-color: rgb(0, 197, 133);
+    justify-self: right;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.nav_buttons {
+    display: flex;
+    flex-direction: row;
+    color: white; 
+    width: fit-content; 
+    height: 27px;
+    justify-self: right;
+    align-items: center;
+    margin: 0; 
+    margin-right: 15px;
+}
+
+.nav_buttons> nav {
+    width: fit-content; 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.hook-outer-box {
+    color: rgb(40, 64, 12); 
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.hook-title {
+    margin-top: 56px;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: -1.44px;
+    line-height: 78px;
+}
+.hook-text {
+    display: flex;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 34px;
+    width: 476px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.search-box-outer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    border: 0; 
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+.search-box-image> img {
+    border-radius: 25px;
+    position: relative;
+    bottom: 50px;
+    z-index: 0;
+    width: 1231.99px; 
+}
+.search-boxes {
+    margin-top: 50px;
+    height: 120px;
+    width: 1150px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    padding: 25px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.destination-search {
+    width: 320px; 
+    height: 56px;
+}
+
+.date-search {
+    height: 56px;  
+    width: 300px; 
+}
+
+.guests-add{
+    height: 56px;
+    width: 392px; 
+}
+
+.search-boxes> input {
+    border-radius: 15px;
+    border: 1px solid darkgray; 
+}
+
+.search-boxes> button {
+    height: 60px;
+    padding: 0 28px; 
+    background-color: rgb(0, 197, 133);
+    border: 0; 
+    border-radius: 10px;
+    color: white; 
+}
+
+.first-picture-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fpv_left {
+    display: grid;
+    grid-template-areas: 
+    "picture picture"
+    "text button";
+
+}
+
+.fpv_left_pic, .fpv_right_pic {
+    grid-area: picture; 
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.fpv_left-block{
+    grid-area: text; 
+    background-color: rgb(85, 102, 68);
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+}
+
+.fpv_left-block-title {
+    font-size: 16px;
+    color: rgb(247, 247, 247); 
+    line-height: 20px;
+    font-weight: bold;
+    width: 410px; 
+}
+
+.fpv_left-block-text {
+    font-size: 24px; 
+    color: rgb(247, 247, 247); 
+    font-weight: 500;
+    line-height: 30px;
+    width: 410px; 
+}
+
+.fpv_right-button-block {
+    grid-area: button; 
+    display: flex;
+    background-color: rgb(85, 102, 68);
+    width: auto; 
+    border-bottom-right-radius: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.fpv_right-button-block> button, .fpv_left-button-block> button{
+    background-color: rgb(247, 247, 247);
+    font-size: 20px;
+    padding: 18px;
+    font-weight: 500; 
+    line-height: 26px;
+    color: rgb(85, 102, 68); 
+    border: 0; 
+    border-radius: 42px;
+    align-self: center;
+}
+
+.fpv_right {
+    display: grid;
+    grid-template-areas: 
+    "picture picture"
+    "text button";
+}
+
+.fpv_right-block {
+    grid-area: text; 
+    background-color: rgb(85, 102, 68);
+    padding: 15px;
+    border-bottom-left-radius: 10px;
+}
+
+.fpv_right-block-title {
+    font-size: 16px;
+    color: rgb(247, 247, 247); 
+    line-height: 20px;
+    font-weight: bold;
+    width: 410px; 
+}
+
+.fpv_right-block-text {
+    font-size: 24px; 
+    color: rgb(247, 247, 247); 
+    font-weight: 500;
+    line-height: 30px;
+    width: 410px; 
+}
+
+.fpv_left-button-block {
+    grid-area: button; 
+    display: flex;
+    background-color: rgb(85, 102, 68);
+
+    border-bottom-right-radius: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.fpv_left, .fpv_right {
+    position: relative; 
+    bottom: 0; 
+    transition: all .5s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0px 0px black;
+}
+
+.fpv_left:hover, .fpv_right:hover {
+    transform: translate(0px, -5px);  
+    box-shadow: 3px 3px 5px black;
+}
+
+.big-picture-box {
+    transition: all .5s ease-in-out;
+}
+
+.big-picture-box:hover {
+    transform: translate(0px, -5px);
+}
+
+.big-picture-box>img {
+    box-shadow: 0px 0px black;
+    transition: all .5s ease-in-out;
+}
+
+.big-picture-box>img:hover {
+    box-shadow: 3px 3px 5px black;
+}
+
+.big-picture-box {
+    margin-top: 100px;
+    border-radius: 15px;
+    height: 554.375;
+}
+
+.big-picture-box> img {
+    width: 1231.99px; 
+    border-radius: 15px;
+}
+
+.big-picture-box_text-box {
+    width: 400px; 
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 20px; 
+    position: relative;
+    bottom: 350px; 
+    left: 50px; 
+    background-color: rgb(216, 70, 39);
+    border-radius: 15px;
+    padding: 40px 40px;
+}
+
+.big-picture-box_text-box_heading {
+    font-size: 28px;
+    color:rgb(247, 247, 247); 
+    font-weight: 500;
+    line-height: 34px;
+}
+
+.big-picture-box_text-box_text {
+    font-size: 20px;
+    color: rgb(247, 247, 247);
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.big-picture-box_text-box_button {
+    color: rgb(216, 70, 39); 
+    background-color: rgb(247, 247, 247);
+    border-radius: 55px;
+    width: 150px; 
+    height: 55px; 
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    border: 0; 
+}
